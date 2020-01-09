@@ -1,0 +1,50 @@
+.wrapper
+
+  .chat-side
+    .side-header
+      .side-header__name
+        .side-header__box
+          %p.side-header__box__uesr 
+            masa
+          %ul.side-header__box__uesr__group
+            %li.side-header__box__uesr__group__meun
+              = link_to "#" do
+                =icon('fas', 'edit')
+            %li.side-header__box__uesr__group__edit
+              = link_to "#" do
+                =icon('fas', 'cog')
+    .groups
+      .group
+        %p.group__group-name 
+          エンジニア
+        %p.group__latest-message 
+          まだメッセージはありません
+  .chat-main
+    .main-header
+      .main-header__left-box
+        %h1.main-header__left-box__current-group 
+          エンジニア
+        %ul.main-header__left-box__member-list 
+          menber : 
+          %li.main-header__left-box__member-list__member 
+            masa
+      .main-header__edit-btn 
+        = link_to "#" do
+          edit
+    .messages-main
+      .message
+        .message__upper-info
+          %p.message__upper-info__talker
+            masa
+          %p.message__upper-info__date
+            2020/01/08(Wed) 13:25:36
+        %p.message__text 
+          おはよう 
+    .footer
+      .new_message
+        .message-btn
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file"}
+      .submit
+        send

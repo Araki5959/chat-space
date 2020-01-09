@@ -30,11 +30,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    .side-header__box__uesr__group{
+    &__uesr__group{
       display: flex;
-      .side-header__box__uesr__group__meun{
+      &__meun{
       }
-      .side-header__box__uesr__group__edit{
+      &__edit{
         margin-left: 0.3rem;
       } 
     }

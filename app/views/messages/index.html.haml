@@ -1,21 +1,23 @@
 .wrapper 
+  = render "shared/side_bar"
   .chat-main
     .main-header
       .main-header__left-box
         %h1.main-header__left-box__current-group 
-          エンジニア
+          = @group.name
         %ul.main-header__left-box__member-list 
           menber : 
           %li.main-header__left-box__member-list__member 
-            masa
+            - @group.users.each do |user|
+              = user.name
       .main-header__edit-btn 
-        = link_to "#" do
+        = link_to edit_group_path(@group) do
           edit
     .messages-main
       .message
         .message__upper-info
           %p.message__upper-info__talker
-            masa
+            愛
           %p.message__upper-info__date
             2020/01/08(Wed) 13:25:36
         %p.message__text 

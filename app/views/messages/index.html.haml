@@ -1,32 +1,34 @@
 .wrapper 
   = render "shared/side_bar"
-  .chat-main
-    .main-header
-      .main-header__left-box
-        %h1.main-header__left-box__current-group 
-          = @group.name
-        %ul.main-header__left-box__member-list 
-          menber : 
-          %li.main-header__left-box__member-list__member 
-            - @group.users.each do |user|
-              = user.name
-      .main-header__edit-btn 
-        = link_to edit_group_path(@group) do
-          edit
-    .messages-main
-      .message
-        .message__upper-info
-          %p.message__upper-info__talker
-            愛
-          %p.message__upper-info__date
-            2020/01/08(Wed) 13:25:36
-        %p.message__text 
-          おはよう 
-    .footer
-      .new_message
-        .message-btn
-          %label{class: "input-box__image"}
-            = icon('fas', 'image')
-            %input{type: "file"}
-      .submit
-        send
+  = render "main_chat"
+  -# .chat-main
+  -#   .main-header
+  -#     .main-header__left-box
+  -#       %h1.main-header__left-box__current-group 
+  -#         = @group.name
+  -#       %ul.main-header__left-box__member-list 
+  -#         menber : 
+  -#         %li.main-header__left-box__member-list__member 
+  -#           - @group.users.each do |user|
+  -#             = user.name
+  -#     .main-header__edit-btn 
+  -#       = link_to edit_group_path(@group) do
+  -#         edit
+  -#   .messages-main
+  -#     .message
+  -#       .message__upper-info
+  -#         %p.message__upper-info__talker
+  -#           愛
+  -#         %p.message__upper-info__date
+  -#           2020/01/08(Wed) 13:25:36
+  -#       %p.message__text 
+  -#         おはよう 
+  -#   .footer
+  -#     %form
+  -#       %input.new_message
+  -#       .message-btn
+  -#         %label{class: "input-box__image"}
+  -#           = icon('fas', 'image')
+  -#           %input{type: "file"}
+  -#       %input.submit{type: 'submit', value: 'Send'}
+        

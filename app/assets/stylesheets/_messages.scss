@@ -33,10 +33,14 @@
     &__uesr__group{
       display: flex;
       &__meun{
+        
       }
       &__edit{
         margin-left: 0.3rem;
       } 
+      a{
+        color: white;
+      }
     }
   }
 
@@ -47,6 +51,8 @@
     padding: 20px 20px 0;
     .group{
       margin-bottom: 40px;
+      text-decoration: none;
+      color: white;
       &__group-name{
          font-size: 15px;
          margin-bottom: 5px;
@@ -91,6 +97,9 @@
       padding: 0 20px;
       border: solid 1px #38aef0;
       line-height: 39px;
+      a{
+        color: #38aef0;
+      }
     }
   }
 
@@ -126,49 +135,99 @@
   }
 
   .footer{
+    background-color: #DDDDDD;
+    box-sizing: border-box;
     height: 90px;
-    padding: 20px 40px;
-    background-color: #2d2d2d;
-    display: flex;
-    justify-content: right;
-    .new_message{
+    padding: 20px 50px 20px 40px;
+    &__message{
+      border: none;
+      padding-left: 5px;
+      float: left;
       height: 50px;
-      width: 100%;
-      padding: 0 40px 0 10px;
-      background-color:#ffffff ;
-      position:relative;
+      width: calc(100% - 155px);
     }
-
-      .message-btn{
-        height: 50px;
-        width: 50px;
-        position: absolute;
-        right:0px;
-        top:0px;
-
-        label{
-        font-size: 1.3rem;
-        position: absolute;
-        top: 14px;
-        right: 10px;
-        cursor: pointer;
-        }
-
-        input{
-        display: none;
+    &__mask {
+      background-color: white;
+      font-size: 16px;
+      float: left;
+      height: 50px;
+      padding-right: 30px;
+      position: relative;
+      padding: 16px;
+      &__image {
+        font-size: 20px;
+        line-height: 50px;
+        .icon{
+          position: absolute;
+          top: 12px;
+          right: 10px;
         }
       }
-
-
-    .submit{
-      background-color:#38aef0;
-      color: blanchedalmond;
+      .hidden {
+        display: none;
+      }
+    }
+    &__submit{
+      background-color: #38aef0;
+      border: none;
+      color: white;
+      float: right;
+      font-size: 16px;
       height: 50px;
-      width: 10%;
       margin-left: 15px;
-      text-align: center;
-      padding-top: 5px;
-      line-height: 40px;
+      padding: 0 30px;
     }
   }
 }
+
+
+// .footer{
+//   height: 90px;
+//   padding: 20px 40px;
+//   background-color: #2d2d2d;
+//   display: flex;
+//   justify-content: right;
+//   .new_message{
+//     height: 50px;
+//     width: 100%;
+//     padding: 0 40px 0 10px;
+//     background-color:#ffffff ;
+//     // position:relative;
+//     display: flex;
+//   }
+
+//     .message-btn{
+//       height: 50px;
+//       width: 50px;
+//       // position: absolute;
+//       // right:0px;
+//       // top:0px;
+
+//       &__image{
+//       font-size: 1.3rem;
+//       // position: absolute;
+//       // top: 14px;
+//       // right: 10px;
+//       cursor: pointer;
+//       }
+
+//       .hidden{
+//       display: none;
+//       }
+//     }
+
+
+//   .submit{
+//     background-color:#38aef0;
+//     color: blanchedalmond;
+//     height: 50px;
+//     width: 10%;
+//     margin-left: 15px;
+//     text-align: center;
+//     padding-top: 5px;
+//     line-height: 40px;
+//     float: right;
+
+
+// padding: 16px 0px;
+// font-size: 1.3rem;

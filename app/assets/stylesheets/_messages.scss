@@ -108,6 +108,7 @@
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 46px 40px;
+    overflow: scroll;
     .message{
       padding-bottom: 40px;
       &__upper-info{
@@ -181,53 +182,3 @@
 }
 
 
-// .footer{
-//   height: 90px;
-//   padding: 20px 40px;
-//   background-color: #2d2d2d;
-//   display: flex;
-//   justify-content: right;
-//   .new_message{
-//     height: 50px;
-//     width: 100%;
-//     padding: 0 40px 0 10px;
-//     background-color:#ffffff ;
-//     // position:relative;
-//     display: flex;
-//   }
-
-//     .message-btn{
-//       height: 50px;
-//       width: 50px;
-//       // position: absolute;
-//       // right:0px;
-//       // top:0px;
-
-//       &__image{
-//       font-size: 1.3rem;
-//       // position: absolute;
-//       // top: 14px;
-//       // right: 10px;
-//       cursor: pointer;
-//       }
-
-//       .hidden{
-//       display: none;
-//       }
-//     }
-
-
-//   .submit{
-//     background-color:#38aef0;
-//     color: blanchedalmond;
-//     height: 50px;
-//     width: 10%;
-//     margin-left: 15px;
-//     text-align: center;
-//     padding-top: 5px;
-//     line-height: 40px;
-//     float: right;
-
-
-// padding: 16px 0px;
-// font-size: 1.3rem;
